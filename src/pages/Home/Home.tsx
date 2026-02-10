@@ -34,6 +34,10 @@ export const Home = () => {
       .finally(() => setLoading(false));
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   const filtered = products;
 
   const getMinPrice = (p: Product) => {
@@ -109,7 +113,11 @@ export const Home = () => {
               </Text>
             </Collapse>
 
-            <ActionIcon color="black" variant="subtle" onClick={() => setDescOpen((o) => !o)}>
+            <ActionIcon
+              color="black"
+              variant="subtle"
+              onClick={() => setDescOpen((o) => !o)}
+            >
               {descOpen ? (
                 <IconChevronUp size={18} />
               ) : (

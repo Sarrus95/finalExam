@@ -48,6 +48,10 @@ export default function ProductDetail() {
     setImgIndex(0);
     setSize(null);
   }, [id]);
+  
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+  }, [id]);
 
   const handleAddToCart = () => {
     if (!size) return;
