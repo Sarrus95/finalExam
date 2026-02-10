@@ -109,7 +109,7 @@ export const Home = () => {
               </Text>
             </Collapse>
 
-            <ActionIcon variant="subtle" onClick={() => setDescOpen((o) => !o)}>
+            <ActionIcon color="black" variant="subtle" onClick={() => setDescOpen((o) => !o)}>
               {descOpen ? (
                 <IconChevronUp size={18} />
               ) : (

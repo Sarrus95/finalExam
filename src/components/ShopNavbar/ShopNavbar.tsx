@@ -22,7 +22,7 @@ const ShopNavbar = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
-  const NAV_HEIGHT = isMobile ? 56 : 72;
+  const NAV_HEIGHT = isMobile ? 52 : 64;
   const ICON_SIZE = isMobile ? 20 : 26;
   const ACTION_SIZE = isMobile ? 36 : 44;
   const DRAWER_ICON = isMobile ? 22 : 26;
@@ -31,7 +31,7 @@ const ShopNavbar = () => {
     <>
       <Box
         h={NAV_HEIGHT}
-        px={{ base: "md", md: "xl" }}
+        px="sm"
         style={{
           borderBottom: "1px solid #eee",
           position: "sticky",
@@ -46,29 +46,33 @@ const ShopNavbar = () => {
             <Burger
               opened={opened}
               onClick={open}
-              hiddenFrom="lg"
+              hiddenFrom="xl"
               size={isMobile ? "sm" : "md"}
             />
 
-            <Image
-              src="imgs/navbar/logo.png"
-              h={isMobile ? 16 : 20}
-              fit="contain"
-            />
+            <Box h={24} style={{ display: "flex", alignItems: "center" }}>
+              <Image
+                src="imgs/navbar/logo.png"
+                h={isMobile ? 16 : 20}
+                fit="contain"
+              />
+            </Box>
           </Group>
 
           <Text
-            visibleFrom="lg"
+            visibleFrom="md"
             size="sm"
             fw={700}
-            style={{ letterSpacing: 1 }}
+            style={{
+              letterSpacing: 1,
+            }}
           >
             ABBIGLIAMENTO
           </Text>
 
           <Group gap={4}>
             <ActionIcon variant="subtle" w={ACTION_SIZE} h={ACTION_SIZE}>
-              <IconSearch size={ICON_SIZE} />
+              <IconSearch color="black" size={ICON_SIZE} />
             </ActionIcon>
 
             <ActionIcon
@@ -77,15 +81,15 @@ const ShopNavbar = () => {
               h={ACTION_SIZE}
               visibleFrom="md"
             >
-              <IconUser size={ICON_SIZE} />
+              <IconUser color="black" size={ICON_SIZE} />
             </ActionIcon>
 
             <ActionIcon variant="subtle" w={ACTION_SIZE} h={ACTION_SIZE}>
-              <IconHeart size={ICON_SIZE} />
+              <IconHeart color="black" size={ICON_SIZE} />
             </ActionIcon>
 
             <ActionIcon variant="subtle" w={ACTION_SIZE} h={ACTION_SIZE}>
-              <IconShoppingBag size={ICON_SIZE} />
+              <IconShoppingBag color="black" size={ICON_SIZE} />
             </ActionIcon>
           </Group>
         </Group>
@@ -106,21 +110,26 @@ const ShopNavbar = () => {
           justify="space-between"
           style={{ borderBottom: "1px solid #eee" }}
         >
-          <ActionIcon onClick={close} w={ACTION_SIZE} h={ACTION_SIZE}>
+          <ActionIcon
+            variant="subtle"
+            onClick={close}
+            w={ACTION_SIZE}
+            h={ACTION_SIZE}
+          >
             <IconX size={DRAWER_ICON} />
           </ActionIcon>
 
           <Group gap="md">
-            <ActionIcon w={ACTION_SIZE} h={ACTION_SIZE}>
-              <IconSearch size={DRAWER_ICON} />
+            <ActionIcon variant="subtle" w={ACTION_SIZE} h={ACTION_SIZE}>
+              <IconSearch color="black" size={DRAWER_ICON} />
             </ActionIcon>
 
-            <ActionIcon w={ACTION_SIZE} h={ACTION_SIZE}>
-              <IconHeart size={DRAWER_ICON} />
+            <ActionIcon variant="subtle" w={ACTION_SIZE} h={ACTION_SIZE}>
+              <IconHeart color="black" size={DRAWER_ICON} />
             </ActionIcon>
 
-            <ActionIcon w={ACTION_SIZE} h={ACTION_SIZE}>
-              <IconShoppingBag size={DRAWER_ICON} />
+            <ActionIcon variant="subtle" w={ACTION_SIZE} h={ACTION_SIZE}>
+              <IconShoppingBag color="black" size={DRAWER_ICON} />
             </ActionIcon>
           </Group>
         </Group>
@@ -133,19 +142,19 @@ const ShopNavbar = () => {
             style={{ borderBottom: "1px solid #f0f0f0" }}
           >
             <Text size="lg" fw={600}>
-              ABBIGLIAMENTO
+              ABBLIGLIAMENTO
             </Text>
             <IconChevronRight size={DRAWER_ICON} />
           </Group>
 
-          <Group px="md" py="lg" justify="space-between">
+          <Group px="md" py="lg" justify="space-between" hiddenFrom="md">
             <Group>
-              <IconUser size={DRAWER_ICON} />
+              <IconUser color="black" size={DRAWER_ICON} />
               <Text size="lg" fw={600}>
                 ACCOUNT
               </Text>
             </Group>
-            <IconChevronRight size={DRAWER_ICON} />
+            <IconChevronRight color="black" size={DRAWER_ICON} />
           </Group>
         </Stack>
       </Drawer>
