@@ -17,7 +17,6 @@ export function HeroCategory({
       className={classes.wrapper}
       style={{ backgroundImage: `url(${image})` }}
     >
-      {/* gradient + darkening handled by overlay */}
       <Overlay color="#000" opacity={0.45} zIndex={1} />
 
       <Container size="lg" className={classes.inner}>

@@ -1,89 +1,77 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Container,
   Grid,
-  Image,
   Text,
-  Badge,
-  Button,
   Group,
   Select,
-  TextInput,
   Box,
   Stack,
   Collapse,
   ActionIcon,
+  Loader,
+  Center,
 } from "@mantine/core";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import { HeroCategory } from "@/components/HeroCategory/HeroCategory";
+import { ProductCard } from "@/components/ProductCard/ProductCard";
+import { getProducts } from "@/services/storeApi";
+import type { Product } from "@/types/Product";
+import { useNavigate } from "react-router-dom";
 
-const PRODUCTS = [
-  {
-    id: 1,
-    name: "Oversized Hoodie Black",
-    price: 89,
-    image:
-      "https://images.unsplash.com/photo-1520975922323-6b3c2e5a1c55?q=80&w=1200",
-    tag: "New",
-  },
-  {
-    id: 2,
-    name: "Street Tee White",
-    price: 39,
-    image:
-      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=1200",
-    tag: "Hot",
-  },
-  {
-    id: 3,
-    name: "Cargo Pants",
-    price: 119,
-    image:
-      "https://images.unsplash.com/photo-1503341733017-1901578f9f1e?q=80&w=1200",
-  },
-  {
-    id: 4,
-    name: "Zip Jacket",
-    price: 149,
-    image:
-      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=1200",
-    tag: "New",
-  },
-  {
-    id: 5,
-    name: "Graphic Hoodie",
-    price: 99,
-    image:
-      "https://images.unsplash.com/photo-1516826957135-700dedea698c?q=80&w=1200",
-  },
-  {
-    id: 6,
-    name: "Denim Jacket",
-    price: 169,
-    image:
-      "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?q=80&w=1200",
-  },
-];
+export const Home = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
 
-const PAGE_SIZE = 6;
-
-export default function ProductsPage() {
-  const [search, setSearch] = useState("");
   const [sort, setSort] = useState<string | null>("latest");
-  const [page, setPage] = useState(1);
   const [descOpen, setDescOpen] = useState(false);
 
-  const filtered = PRODUCTS.filter((p) =>
-    p.name.toLowerCase().includes(search.toLowerCase()),
-  );
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    getProducts()
+      .then(setProducts)
+      .finally(() => setLoading(false));
+  }, []);
+
+  const filtered = products;
+
+  const getMinPrice = (p: Product) => {
+    const vals = Object.values(p.sizes).filter(
+      (v): v is number => typeof v === "number",
+    );
+    return vals.length ? Math.min(...vals) : 0;
+  };
 
   const sorted = [...filtered].sort((a, b) => {
-    if (sort === "price-asc") return a.price - b.price;
-    if (sort === "price-desc") return b.price - a.price;
-    return b.id - a.id;
-  });
+    const pa = getMinPrice(a);
+    const pb = getMinPrice(b);
 
-  const paged = sorted.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+    switch (sort) {
+      case "price-asc":
+        return pa - pb;
+
+      case "price-desc":
+        return pb - pa;
+
+      case "name-asc":
+        return a.name.localeCompare(b.name);
+
+      case "name-desc":
+        return b.name.localeCompare(a.name);
+
+      case "oldest":
+        return (
+          new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime()
+        );
+
+      case "latest":
+      default:
+        return (
+          new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
+        );
+    }
+  });
 
   return (
     <>
@@ -131,76 +119,58 @@ export default function ProductsPage() {
           </Stack>
 
           <Group justify="space-between" mb="lg">
-            <Button variant="outline" size="xs">
-              FILTRI
-            </Button>
-
             <Group>
-              <TextInput
-                size="xs"
-                placeholder="Search products"
-                value={search}
-                onChange={(e) => {
-                  setSearch(e.currentTarget.value);
-                  setPage(1);
-                }}
-              />
-
               <Select
+                label="Ordina per"
                 size="xs"
                 value={sort}
                 onChange={setSort}
+                placeholder="Ordina per"
                 data={[
-                  { value: "latest", label: "Latest" },
-                  { value: "price-asc", label: "Price ↑" },
-                  { value: "price-desc", label: "Price ↓" },
+                  {
+                    value: "price-asc",
+                    label: "Prezzo: dal più basso al più alto",
+                  },
+                  {
+                    value: "price-desc",
+                    label: "Prezzo: dal più alto al più basso",
+                  },
+                  { value: "name-asc", label: "Nome: A-Z" },
+                  { value: "name-desc", label: "Nome: Z-A" },
+                  { value: "oldest", label: "Meno recenti" },
+                  { value: "latest", label: "Più recenti" },
                 ]}
               />
             </Group>
           </Group>
 
-          <Grid gutter={24}>
-            {paged.map((product) => (
-              <Grid.Col
-                key={product.id}
-                span={{ base: 12, sm: 6, md: 4, lg: 3 }}
-              >
-                <Box
-                  style={{
-                    cursor: "pointer",
-                    transition: "transform .15s ease",
-                  }}
+          {loading ? (
+            <Center py="xl">
+              <Loader />
+            </Center>
+          ) : (
+            <Grid gutter={24}>
+              {sorted.map((product) => (
+                <Grid.Col
+                  key={product.id}
+                  span={{ base: 12, sm: 6, md: 4, lg: 3 }}
                 >
-                  <Box bg="white" p="md">
-                    <Image
-                      src={product.image}
-                      h={260}
-                      fit="contain"
-                      alt={product.name}
-                    />
-                  </Box>
-
-                  <Group justify="space-between" mt="sm" mb={4}>
-                    <Text size="xs" fw={500} lineClamp={1}>
-                      {product.name}
-                    </Text>
-                    {product.tag && (
-                      <Badge size="xs" variant="light">
-                        {product.tag}
-                      </Badge>
-                    )}
-                  </Group>
-
-                  <Text size="sm" fw={700}>
-                    €{product.price}
-                  </Text>
-                </Box>
-              </Grid.Col>
-            ))}
-          </Grid>
-
+                  <ProductCard
+                    product={product}
+                    onClick={() =>
+                      navigate(`/product/${product.id}`, {
+                        state: { product },
+                      })
+                    }
+                  />
+                </Grid.Col>
+              ))}
+            </Grid>
+          )}
         </Container>
       </Box>
     </>
   );
-}
+};
+
+export default Home;

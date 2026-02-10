@@ -1,4 +1,4 @@
-type Sizes = "S" | "M" | "L" | "XL" | "XXL";
+export type Size = "XS" | "S" | "M" | "L" | "XL" | "XXL" | "OneSize";
 
 export type Product = {
   id: string;
@@ -8,6 +8,6 @@ export type Product = {
   images: string[];
   brand: string;
   category: string;
-  sizes: Record<Sizes, number>;
+  sizes: Partial<Record<Size, number>>;
   createdAt: string;
 };

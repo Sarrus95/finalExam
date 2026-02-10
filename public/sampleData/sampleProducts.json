@@ -4,21 +4,29 @@
     "code": "CH-DD-THERMAL-BLK",
     "name": "Chrome Hearts x Deadly Doll Thermal Black",
     "description": "Long sleeve thermal with collaborative graphic print.",
-    "images": ["chrome-thermal-black-1.jpg", "chrome-thermal-black-2.jpg"],
+    "images": ["/imgs/products/pr11.jpeg", "/imgs/products/pr12.jpeg"],
     "brand": "Chrome Hearts",
     "category": "tops",
-    "sizes": { "S": 180, "M": 195, "L": 210 },
+    "sizes": {
+      "S": 180,
+      "M": 195,
+      "L": 210
+    },
     "createdAt": "2026-02-10T00:00:00Z"
   },
   {
     "id": "prod_002",
     "code": "HYPE-ESSENTIAL-TEE-WHT",
-    "name": "Hype Clothing Essential Tee White",
+    "name": "Supreme Vanson Leathers b.b. Simon Jacket Brown",
     "description": "Premium cotton t-shirt with branding.",
-    "images": ["essential-tee-white-1.jpg", "essential-tee-white-2.jpg"],
+    "images": ["/imgs/products/pr21.jpeg", "/imgs/products/pr22.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 40, "M": 45, "L": 50 },
+    "sizes": {
+      "S": 40,
+      "M": 45,
+      "L": 50
+    },
     "createdAt": "2026-02-09T00:00:00Z"
   },
   {
@@ -26,10 +34,14 @@
     "code": "HYPE-ESSENTIAL-TEE-BLK",
     "name": "Hype Clothing Essential Tee Black",
     "description": "Black cotton tee with logo.",
-    "images": ["essential-tee-black-1.jpg"],
+    "images": ["/imgs/products/pr31.jpeg", "/imgs/products/pr32.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 40, "M": 45, "L": 50 },
+    "sizes": {
+      "S": 40,
+      "M": 45,
+      "L": 50
+    },
     "createdAt": "2026-02-08T00:00:00Z"
   },
   {
@@ -37,10 +49,14 @@
     "code": "HYPE-GRAPHIC-HOODIE-GRY",
     "name": "Hype Graphic Hoodie Grey",
     "description": "Soft fleece hoodie with print.",
-    "images": ["graphic-hoodie-grey-1.jpg", "graphic-hoodie-grey-2.jpg"],
+    "images": ["/imgs/products/pr41.jpeg", "/imgs/products/pr42.jpeg"],
     "brand": "Hype Clothing",
     "category": "hoodies",
-    "sizes": { "S": 90, "M": 95, "L": 100 },
+    "sizes": {
+      "S": 90,
+      "M": 95,
+      "L": 100
+    },
     "createdAt": "2026-02-07T00:00:00Z"
   },
   {
@@ -48,10 +64,14 @@
     "code": "HYPE-JOGGER-BLK",
     "name": "Hype Jogger Black",
     "description": "Relaxed fit joggers.",
-    "images": ["jogger-black-1.jpg"],
+    "images": ["/imgs/products/pr51.jpeg", "/imgs/products/pr52.jpeg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
-    "sizes": { "S": 70, "M": 75, "L": 80 },
+    "sizes": {
+      "S": 70,
+      "M": 75,
+      "L": 80
+    },
     "createdAt": "2026-02-06T00:00:00Z"
   },
   {
@@ -59,10 +79,14 @@
     "code": "HYPE-DENIM-JACKET-LTBL",
     "name": "Hype Denim Jacket Light Blue",
     "description": "Classic denim jacket.",
-    "images": ["denim-jacket-ltblue-1.jpg", "denim-jacket-ltblue-2.jpg"],
+    "images": ["/imgs/products/pr61.jpeg", "/imgs/products/pr62.jpeg"],
     "brand": "Hype Clothing",
     "category": "outerwear",
-    "sizes": { "S": 110, "M": 115, "L": 120 },
+    "sizes": {
+      "S": 110,
+      "M": 115,
+      "L": 120
+    },
     "createdAt": "2026-02-05T00:00:00Z"
   },
   {
@@ -70,10 +94,14 @@
     "code": "HYPE-TRACK-PANT-NVY",
     "name": "Hype Track Pant Navy",
     "description": "Sport track pants.",
-    "images": ["trackpant-navy-1.jpg"],
+    "images": ["/imgs/products/pr71.jpeg", "/imgs/products/pr72.jpeg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
-    "sizes": { "S": 60, "M": 65, "L": 70 },
+    "sizes": {
+      "S": 60,
+      "M": 65,
+      "L": 70
+    },
     "createdAt": "2026-02-04T00:00:00Z"
   },
   {
@@ -81,10 +109,14 @@
     "code": "HYPE-SWIM-SHORTS-BLU",
     "name": "Hype Swim Shorts Blue",
     "description": "Quick dry swim shorts.",
-    "images": ["swim-shorts-blue-1.jpg"],
+    "images": ["/imgs/products/pr81.jpeg", "/imgs/products/pr82.jpeg"],
     "brand": "Hype Clothing",
     "category": "swimwear",
-    "sizes": { "S": 50, "M": 55, "L": 60 },
+    "sizes": {
+      "S": 50,
+      "M": 55,
+      "L": 60
+    },
     "createdAt": "2026-02-03T00:00:00Z"
   },
   {
@@ -95,7 +127,11 @@
     "images": ["basic-sweater-cream-1.jpg"],
     "brand": "Hype Clothing",
     "category": "knitwear",
-    "sizes": { "S": 75, "M": 80, "L": 85 },
+    "sizes": {
+      "S": 75,
+      "M": 80,
+      "L": 85
+    },
     "createdAt": "2026-02-02T00:00:00Z"
   },
   {
@@ -106,7 +142,11 @@
     "images": ["cargo-pant-olive-1.jpg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
-    "sizes": { "S": 80, "M": 85, "L": 90 },
+    "sizes": {
+      "S": 80,
+      "M": 85,
+      "L": 90
+    },
     "createdAt": "2026-02-01T00:00:00Z"
   },
   {
@@ -117,7 +157,11 @@
     "images": ["linen-shirt-white-1.jpg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 55, "M": 60, "L": 65 },
+    "sizes": {
+      "S": 55,
+      "M": 60,
+      "L": 65
+    },
     "createdAt": "2026-01-31T00:00:00Z"
   },
   {
@@ -128,7 +172,11 @@
     "images": ["flannel-shirt-red-1.jpg", "flannel-shirt-red-2.jpg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 60, "M": 65, "L": 70 },
+    "sizes": {
+      "S": 60,
+      "M": 65,
+      "L": 70
+    },
     "createdAt": "2026-01-30T00:00:00Z"
   },
   {
@@ -139,7 +187,11 @@
     "images": ["puffer-vest-black-1.jpg"],
     "brand": "Hype Clothing",
     "category": "outerwear",
-    "sizes": { "S": 95, "M": 100, "L": 105 },
+    "sizes": {
+      "S": 95,
+      "M": 100,
+      "L": 105
+    },
     "createdAt": "2026-01-29T00:00:00Z"
   },
   {
@@ -150,7 +202,11 @@
     "images": ["beach-tee-yellow-1.jpg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 38, "M": 42, "L": 46 },
+    "sizes": {
+      "S": 38,
+      "M": 42,
+      "L": 46
+    },
     "createdAt": "2026-01-28T00:00:00Z"
   },
   {
@@ -161,7 +217,11 @@
     "images": ["utility-shorts-khaki-1.jpg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
-    "sizes": { "S": 45, "M": 50, "L": 55 },
+    "sizes": {
+      "S": 45,
+      "M": 50,
+      "L": 55
+    },
     "createdAt": "2026-01-27T00:00:00Z"
   },
   {
@@ -172,7 +232,11 @@
     "images": ["tank-black-1.jpg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 30, "M": 35, "L": 40 },
+    "sizes": {
+      "S": 30,
+      "M": 35,
+      "L": 40
+    },
     "createdAt": "2026-01-26T00:00:00Z"
   },
   {
@@ -183,7 +247,11 @@
     "images": ["striped-shirt-blue-1.jpg"],
     "brand": "Hype Clothing",
     "category": "tops",
-    "sizes": { "S": 58, "M": 62, "L": 66 },
+    "sizes": {
+      "S": 58,
+      "M": 62,
+      "L": 66
+    },
     "createdAt": "2026-01-25T00:00:00Z"
   },
   {
@@ -194,7 +262,11 @@
     "images": ["light-hoodie-cream-1.jpg"],
     "brand": "Hype Clothing",
     "category": "hoodies",
-    "sizes": { "S": 85, "M": 90, "L": 95 },
+    "sizes": {
+      "S": 85,
+      "M": 90,
+      "L": 95
+    },
     "createdAt": "2026-01-24T00:00:00Z"
   },
   {
@@ -205,7 +277,11 @@
     "images": ["fleece-sweatpant-grey-1.jpg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
-    "sizes": { "S": 65, "M": 70, "L": 75 },
+    "sizes": {
+      "S": 65,
+      "M": 70,
+      "L": 75
+    },
     "createdAt": "2026-01-23T00:00:00Z"
   },
   {
@@ -216,117 +292,9 @@
     "images": ["patch-beanie-black-1.jpg"],
     "brand": "Hype Clothing",
     "category": "accessories",
-    "sizes": { "OneSize": 25 },
+    "sizes": {
+      "OneSize": 25
+    },
     "createdAt": "2026-01-22T00:00:00Z"
-  },
-  {
-    "id": "prod_021",
-    "code": "HYPE-SHOULDER-BAG-BRN",
-    "name": "Hype Shoulder Bag Brown",
-    "description": "Compact crossbody bag.",
-    "images": ["shoulder-bag-brown-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "accessories",
-    "sizes": { "OneSize": 45 },
-    "createdAt": "2026-01-21T00:00:00Z"
-  },
-  {
-    "id": "prod_022",
-    "code": "HYPE-ROMPER-PNK",
-    "name": "Hype Romper Pink",
-    "description": "Casual summer romper.",
-    "images": ["romper-pink-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "onesies",
-    "sizes": { "S": 55, "M": 60, "L": 65 },
-    "createdAt": "2026-01-20T00:00:00Z"
-  },
-  {
-    "id": "prod_023",
-    "code": "HYPE-BOMBER-JACKET-BLK",
-    "name": "Hype Bomber Jacket Black",
-    "description": "Classic bomber with patch logo.",
-    "images": ["bomber-jacket-black-1.jpg", "bomber-jacket-black-2.jpg"],
-    "brand": "Hype Clothing",
-    "category": "outerwear",
-    "sizes": { "S": 130, "M": 135, "L": 140 },
-    "createdAt": "2026-01-19T00:00:00Z"
-  },
-  {
-    "id": "prod_024",
-    "code": "HYPE-CHINO-PANT-SND",
-    "name": "Hype Chino Pant Sand",
-    "description": "Tailored chinos for everyday.",
-    "images": ["chino-pant-sand-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "bottoms",
-    "sizes": { "S": 75, "M": 80, "L": 85 },
-    "createdAt": "2026-01-18T00:00:00Z"
-  },
-  {
-    "id": "prod_025",
-    "code": "HYPE-LINEN-SHORTS-WHT",
-    "name": "Hype Linen Shorts White",
-    "description": "Light linen shorts.",
-    "images": ["linen-shorts-white-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "bottoms",
-    "sizes": { "S": 50, "M": 55, "L": 60 },
-    "createdAt": "2026-01-17T00:00:00Z"
-  },
-  {
-    "id": "prod_026",
-    "code": "HYPE-POLO-SHIRT-NVY",
-    "name": "Hype Polo Shirt Navy",
-    "description": "Classic polo fit.",
-    "images": ["polo-shirt-navy-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "tops",
-    "sizes": { "S": 55, "M": 60, "L": 65 },
-    "createdAt": "2026-01-16T00:00:00Z"
-  },
-  {
-    "id": "prod_027",
-    "code": "HYPE-CREW-SWEATSHIRT-RED",
-    "name": "Hype Crew Sweatshirt Red",
-    "description": "Comfort fit crewneck.",
-    "images": ["crew-sweatshirt-red-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "hoodies",
-    "sizes": { "S": 75, "M": 80, "L": 85 },
-    "createdAt": "2026-01-15T00:00:00Z"
-  },
-  {
-    "id": "prod_028",
-    "code": "HYPE-STRAP-HAT-GRN",
-    "name": "Hype Strap Hat Green",
-    "description": "Six-panel strapback.",
-    "images": ["strap-hat-green-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "accessories",
-    "sizes": { "OneSize": 30 },
-    "createdAt": "2026-01-14T00:00:00Z"
-  },
-  {
-    "id": "prod_029",
-    "code": "HYPE-BEACH-TOWEL-MLT",
-    "name": "Hype Beach Towel Multi",
-    "description": "Large beach towel.",
-    "images": ["beach-towel-multi-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "accessories",
-    "sizes": { "OneSize": 35 },
-    "createdAt": "2026-01-13T00:00:00Z"
-  },
-  {
-    "id": "prod_030",
-    "code": "HYPE-SUNGLASSES-BLK",
-    "name": "Hype Sunglasses Black",
-    "description": "UV protection sunglasses.",
-    "images": ["sunglasses-black-1.jpg"],
-    "brand": "Hype Clothing",
-    "category": "accessories",
-    "sizes": { "OneSize": 55 },
-    "createdAt": "2026-01-12T00:00:00Z"
   }
 ]
