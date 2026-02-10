@@ -1,4 +1,4 @@
-import type { Album } from "@/types/Album";
+import type { Album } from "@/types/Product";
 
 const BASE_URL = import.meta.env.VITE_API_BASE_URL
 
