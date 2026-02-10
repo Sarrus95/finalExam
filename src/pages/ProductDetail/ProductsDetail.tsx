@@ -78,11 +78,9 @@ export default function ProductDetail() {
 
   const minPrice = prices.length ? Math.min(...prices) : 0;
 
-
   return (
     <>
       <Container size={1400} py="xl">
-        {/* ✅ Add to cart modal */}
         <Modal opened={opened} onClose={close} title="Carrello" centered>
           <Text>Prodotto aggiunto al carrello</Text>
           <Text size="sm" c="dimmed" mt="xs">
@@ -91,7 +89,6 @@ export default function ProductDetail() {
         </Modal>
 
         <Grid gutter={40}>
-          {/* LEFT — gallery */}
           <Grid.Col span={{ base: 12, md: 6 }}>
             <Image
               src={images[imgIndex]}
@@ -123,7 +120,6 @@ export default function ProductDetail() {
             )}
           </Grid.Col>
 
-          {/* RIGHT — info */}
           <Grid.Col span={{ base: 12, md: 6 }}>
             <Stack gap="md">
               <Text size="xl" fw={700}>
@@ -165,6 +161,11 @@ export default function ProductDetail() {
               </Paper>
 
               <Accordion variant="separated">
+                <Accordion.Item value="pay">
+                  <Accordion.Control>Metodi di pagamento</Accordion.Control>
+                  <Accordion.Panel>Carte, PayPal, Bonifico</Accordion.Panel>
+                </Accordion.Item>
+
                 <Accordion.Item value="details">
                   <Accordion.Control>Dettagli prodotto</Accordion.Control>
                   <Accordion.Panel>{product.description}</Accordion.Panel>
