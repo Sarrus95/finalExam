@@ -124,7 +124,7 @@
     "code": "HYPE-BASIC-SWEATER-CRE",
     "name": "Hype Basic Sweater Cream",
     "description": "Casual knit sweater.",
-    "images": ["basic-sweater-cream-1.jpg"],
+    "images": ["/imgs/products/pr91.jpeg", "/imgs/products/pr92.jpeg"],
     "brand": "Hype Clothing",
     "category": "knitwear",
     "sizes": {
@@ -139,7 +139,7 @@
     "code": "HYPE-CARGO-PANT-OD",
     "name": "Hype Cargo Pant Olive",
     "description": "Utility cargo pants.",
-    "images": ["cargo-pant-olive-1.jpg"],
+    "images": ["/imgs/products/pr101.jpeg", "/imgs/products/pr102.jpeg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
     "sizes": {
@@ -154,7 +154,7 @@
     "code": "HYPE-LINEN-SHIRT-WHT",
     "name": "Hype Linen Shirt White",
     "description": "Lightweight summer shirt.",
-    "images": ["linen-shirt-white-1.jpg"],
+    "images": ["/imgs/products/pr111.jpeg", "/imgs/products/pr112.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
     "sizes": {
@@ -169,7 +169,7 @@
     "code": "HYPE-FLANNEL-SHIRT-RED",
     "name": "Hype Flannel Shirt Red",
     "description": "Soft plaid flannel.",
-    "images": ["flannel-shirt-red-1.jpg", "flannel-shirt-red-2.jpg"],
+    "images": ["/imgs/products/pr121.jpeg", "/imgs/products/pr122.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
     "sizes": {
@@ -184,7 +184,7 @@
     "code": "HYPE-VEST-BLK",
     "name": "Hype Puffer Vest Black",
     "description": "Insulated puffer vest.",
-    "images": ["puffer-vest-black-1.jpg"],
+    "images": ["/imgs/products/pr131.jpeg", "/imgs/products/pr132.jpeg"],
     "brand": "Hype Clothing",
     "category": "outerwear",
     "sizes": {
@@ -199,7 +199,7 @@
     "code": "HYPE-BEACH-TEE-YEL",
     "name": "Hype Beach Tee Yellow",
     "description": "Bright summer tee.",
-    "images": ["beach-tee-yellow-1.jpg"],
+    "images": ["/imgs/products/pr141.jpeg", "/imgs/products/pr142.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
     "sizes": {
@@ -214,7 +214,7 @@
     "code": "HYPE-UTILITY-SHORTS-KHA",
     "name": "Hype Utility Shorts Khaki",
     "description": "Casual everyday shorts.",
-    "images": ["utility-shorts-khaki-1.jpg"],
+    "images": ["/imgs/products/pr151.jpeg", "/imgs/products/pr152.jpeg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
     "sizes": {
@@ -229,7 +229,7 @@
     "code": "HYPE-TANK-BLK",
     "name": "Hype Rib Tank Black",
     "description": "Sleeveless rib tank.",
-    "images": ["tank-black-1.jpg"],
+    "images": ["/imgs/products/pr161.jpeg", "/imgs/products/pr162.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
     "sizes": {
@@ -244,7 +244,7 @@
     "code": "HYPE-SHIRT-STRIPE-BLU",
     "name": "Hype Striped Shirt Blue",
     "description": "Casual stripe button down.",
-    "images": ["striped-shirt-blue-1.jpg"],
+    "images": ["/imgs/products/pr171.jpeg", "/imgs/products/pr172.jpeg"],
     "brand": "Hype Clothing",
     "category": "tops",
     "sizes": {
@@ -259,7 +259,7 @@
     "code": "HYPE-LIGHTHOODIE-CRM",
     "name": "Hype Lightweight Hoodie Cream",
     "description": "Perfect for layering.",
-    "images": ["light-hoodie-cream-1.jpg"],
+    "images": ["/imgs/products/pr181.jpeg", "/imgs/products/pr182.jpeg"],
     "brand": "Hype Clothing",
     "category": "hoodies",
     "sizes": {
@@ -274,7 +274,7 @@
     "code": "HYPE-FLEECE-SWEATPANT-GRY",
     "name": "Hype Fleece Sweatpant Grey",
     "description": "Cozy fleece bottoms.",
-    "images": ["fleece-sweatpant-grey-1.jpg"],
+    "images": ["/imgs/products/pr191.jpeg", "/imgs/products/pr192.jpeg"],
     "brand": "Hype Clothing",
     "category": "bottoms",
     "sizes": {
@@ -289,7 +289,7 @@
     "code": "HYPE-PATCH-BEANIE-BLK",
     "name": "Hype Patch Beanie Black",
     "description": "Warm knit beanie.",
-    "images": ["patch-beanie-black-1.jpg"],
+    "images": ["/imgs/products/pr201.jpeg", "/imgs/products/pr202.jpeg"],
     "brand": "Hype Clothing",
     "category": "accessories",
     "sizes": {
