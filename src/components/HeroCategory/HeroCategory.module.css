@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  height: 200px; 
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    height: 380px;
+  }
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(18px);
+}
+
+@media (min-width: 768px) {
+  .inner {
+    transform: translateY(35px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .inner {
+    transform: translateY(55px);
+  }
+}

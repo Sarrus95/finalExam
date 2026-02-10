@@ -1,0 +1,21 @@
+.home-page {
+  padding: 16px;
+
+  .filters {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+
+  .product-card {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: center;
+  }
+}

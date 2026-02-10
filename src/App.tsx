@@ -1,5 +1,6 @@
 import { AppShell } from "@mantine/core";
 import ShopNavbar from "./components/ShopNavbar/ShopNavbar";
+import Home from "./pages/Home/Home";
 
 const App = () => {
   return (
@@ -8,7 +9,9 @@ const App = () => {
         <ShopNavbar />
       </AppShell.Header>
 
-      <AppShell.Main>Main content</AppShell.Main>
+      <AppShell.Main>
+        <Home />
+      </AppShell.Main>
     </AppShell>
   );
 };
